@@ -3308,3 +3308,4 @@
 [2022-06-16 23:20:38,545] {processor.py:652} INFO - DAG(s) dict_keys(['latest_only_with_trigger']) retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
 [2022-06-16 23:20:38,580] {logging_mixin.py:109} INFO - [2022-06-16 23:20:38,579] {dag.py:2398} INFO - Sync 1 DAGs
 [2022-06-16 23:20:38,621] {logging_mixin.py:109} INFO - [2022-06-16 23:20:38,620] {dag.py:2937} INFO - Setting next_dagrun for latest_only_with_trigger to 2022-06-16T17:20:38.619890+00:00
+[2022-06-16 23:20:38,656] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.153 seconds

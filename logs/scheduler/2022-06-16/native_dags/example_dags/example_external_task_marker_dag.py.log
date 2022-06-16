@@ -3774,3 +3774,11 @@
 [2022-06-16 23:19:08,688] {logging_mixin.py:109} INFO - [2022-06-16 23:19:08,688] {dag.py:2937} INFO - Setting next_dagrun for example_external_task_marker_child to None
 [2022-06-16 23:19:08,689] {logging_mixin.py:109} INFO - [2022-06-16 23:19:08,689] {dag.py:2937} INFO - Setting next_dagrun for example_external_task_marker_parent to None
 [2022-06-16 23:19:08,707] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py took 0.089 seconds
+[2022-06-16 23:20:38,950] {processor.py:163} INFO - Started process (PID=30788) to work on /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2022-06-16 23:20:38,953] {processor.py:642} INFO - Processing file /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py for tasks to queue
+[2022-06-16 23:20:38,954] {logging_mixin.py:109} INFO - [2022-06-16 23:20:38,954] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2022-06-16 23:20:38,992] {processor.py:652} INFO - DAG(s) dict_keys(['example_external_task_marker_parent', 'example_external_task_marker_child']) retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2022-06-16 23:20:39,033] {logging_mixin.py:109} INFO - [2022-06-16 23:20:39,032] {dag.py:2398} INFO - Sync 2 DAGs
+[2022-06-16 23:20:39,074] {logging_mixin.py:109} INFO - [2022-06-16 23:20:39,074] {dag.py:2937} INFO - Setting next_dagrun for example_external_task_marker_child to None
+[2022-06-16 23:20:39,075] {logging_mixin.py:109} INFO - [2022-06-16 23:20:39,074] {dag.py:2937} INFO - Setting next_dagrun for example_external_task_marker_parent to None
+[2022-06-16 23:20:39,111] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py took 0.167 seconds

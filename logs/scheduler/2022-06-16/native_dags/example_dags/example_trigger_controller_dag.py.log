@@ -6599,3 +6599,10 @@
 [2022-06-16 23:20:14,198] {logging_mixin.py:109} INFO - [2022-06-16 23:20:14,198] {dag.py:2398} INFO - Sync 1 DAGs
 [2022-06-16 23:20:14,225] {logging_mixin.py:109} INFO - [2022-06-16 23:20:14,224] {dag.py:2937} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
 [2022-06-16 23:20:14,246] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.103 seconds
+[2022-06-16 23:20:57,005] {processor.py:163} INFO - Started process (PID=1065) to work on /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-06-16 23:20:57,008] {processor.py:642} INFO - Processing file /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-06-16 23:20:57,009] {logging_mixin.py:109} INFO - [2022-06-16 23:20:57,009] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-06-16 23:20:57,041] {processor.py:652} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-06-16 23:20:57,076] {logging_mixin.py:109} INFO - [2022-06-16 23:20:57,075] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-06-16 23:20:57,112] {logging_mixin.py:109} INFO - [2022-06-16 23:20:57,112] {dag.py:2937} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-06-16 23:20:57,137] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.138 seconds
