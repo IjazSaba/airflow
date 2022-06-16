@@ -8211,3 +8211,24 @@ NameError: name 'date' is not defined
 [2022-06-16 23:13:15,745] {logging_mixin.py:109} INFO - [2022-06-16 23:13:15,745] {dag.py:2398} INFO - Sync 1 DAGs
 [2022-06-16 23:13:15,795] {logging_mixin.py:109} INFO - [2022-06-16 23:13:15,794] {dag.py:2937} INFO - Setting next_dagrun for my_first_dag to None
 [2022-06-16 23:13:15,821] {processor.py:171} INFO - Processing /home/saba/airflow/dags/my_first_dag.py took 1.680 seconds
+[2022-06-16 23:14:08,796] {processor.py:163} INFO - Started process (PID=15620) to work on /home/saba/airflow/dags/my_first_dag.py
+[2022-06-16 23:14:08,798] {processor.py:642} INFO - Processing file /home/saba/airflow/dags/my_first_dag.py for tasks to queue
+[2022-06-16 23:14:08,799] {logging_mixin.py:109} INFO - [2022-06-16 23:14:08,799] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow/dags/my_first_dag.py
+[2022-06-16 23:14:09,664] {processor.py:652} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /home/saba/airflow/dags/my_first_dag.py
+[2022-06-16 23:14:09,689] {logging_mixin.py:109} INFO - [2022-06-16 23:14:09,689] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-06-16 23:14:09,714] {logging_mixin.py:109} INFO - [2022-06-16 23:14:09,714] {dag.py:2937} INFO - Setting next_dagrun for my_first_dag to None
+[2022-06-16 23:14:09,739] {processor.py:171} INFO - Processing /home/saba/airflow/dags/my_first_dag.py took 0.947 seconds
+[2022-06-16 23:14:50,857] {processor.py:163} INFO - Started process (PID=17157) to work on /home/saba/airflow/dags/my_first_dag.py
+[2022-06-16 23:14:50,863] {processor.py:642} INFO - Processing file /home/saba/airflow/dags/my_first_dag.py for tasks to queue
+[2022-06-16 23:14:50,869] {logging_mixin.py:109} INFO - [2022-06-16 23:14:50,868] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow/dags/my_first_dag.py
+[2022-06-16 23:14:53,436] {processor.py:652} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /home/saba/airflow/dags/my_first_dag.py
+[2022-06-16 23:14:53,502] {logging_mixin.py:109} INFO - [2022-06-16 23:14:53,502] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-06-16 23:14:53,559] {logging_mixin.py:109} INFO - [2022-06-16 23:14:53,559] {dag.py:2937} INFO - Setting next_dagrun for my_first_dag to None
+[2022-06-16 23:14:53,600] {processor.py:171} INFO - Processing /home/saba/airflow/dags/my_first_dag.py took 2.748 seconds
+[2022-06-16 23:15:39,018] {processor.py:163} INFO - Started process (PID=18013) to work on /home/saba/airflow/dags/my_first_dag.py
+[2022-06-16 23:15:39,023] {processor.py:642} INFO - Processing file /home/saba/airflow/dags/my_first_dag.py for tasks to queue
+[2022-06-16 23:15:39,024] {logging_mixin.py:109} INFO - [2022-06-16 23:15:39,024] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow/dags/my_first_dag.py
+[2022-06-16 23:15:40,153] {processor.py:652} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /home/saba/airflow/dags/my_first_dag.py
+[2022-06-16 23:15:40,180] {logging_mixin.py:109} INFO - [2022-06-16 23:15:40,180] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-06-16 23:15:40,206] {logging_mixin.py:109} INFO - [2022-06-16 23:15:40,206] {dag.py:2937} INFO - Setting next_dagrun for my_first_dag to None
+[2022-06-16 23:15:40,231] {processor.py:171} INFO - Processing /home/saba/airflow/dags/my_first_dag.py took 1.220 seconds
