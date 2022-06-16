@@ -304,3 +304,15 @@
 [2022-06-16 14:56:54,250] {logging_mixin.py:109} INFO - [2022-06-16 14:56:54,250] {example_kubernetes_executor.py:40} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
 [2022-06-16 14:56:54,250] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py
 [2022-06-16 14:56:54,269] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.060 seconds
+[2022-06-16 14:57:45,146] {processor.py:163} INFO - Started process (PID=7181) to work on /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2022-06-16 14:57:45,149] {processor.py:642} INFO - Processing file /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2022-06-16 14:57:45,150] {logging_mixin.py:109} INFO - [2022-06-16 14:57:45,150] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2022-06-16 14:57:45,171] {logging_mixin.py:109} INFO - [2022-06-16 14:57:45,171] {example_kubernetes_executor.py:40} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2022-06-16 14:57:45,171] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2022-06-16 14:57:45,185] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.045 seconds
+[2022-06-16 14:58:34,761] {processor.py:163} INFO - Started process (PID=8726) to work on /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2022-06-16 14:58:34,780] {processor.py:642} INFO - Processing file /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2022-06-16 14:58:34,782] {logging_mixin.py:109} INFO - [2022-06-16 14:58:34,782] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2022-06-16 14:58:34,860] {logging_mixin.py:109} INFO - [2022-06-16 14:58:34,859] {example_kubernetes_executor.py:40} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2022-06-16 14:58:34,860] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py
+[2022-06-16 14:58:34,886] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor.py took 0.133 seconds
