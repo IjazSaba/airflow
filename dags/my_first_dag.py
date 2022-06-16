@@ -1,10 +1,18 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 
-import requests
+import requests as req
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+import os
 import pandas as pd
+import csv
+from urllib.request import urlopen
+import codecs
 
+HOME = os.path.expanduser('~')
+DATALAKE_ROOT_FOLDER = HOME + "/airflow/"
+
+current_day = date.today().strftime("%Y%m%d")
 
 with DAG(
        'my_first_dag',
@@ -29,27 +37,34 @@ with DAG(
 
 
    def taskLoadDataSource1():
-       url = 'https://static.data.gouv.fr/resources/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/20220615-190218/covid-hosp-txad-age-fra-2022-06-15-19h02.csv'
-       response = urlopen(url)
-       csvfile = csv.reader(codecs.iterdecode(response, 'utf-8'))
+       url1 = 'https://www.data.gouv.fr/fr/datasets/r/5ac33ad1-6782-4618-9a51-293f9c2db1d4'
+       file = req.get(url1, allow_redirects=True)
+       TARGET_PATH = DATALAKE_ROOT_FOLDER + "raw/source1/"
+       if not os.path.exists(TARGET_PATH):
+           os.makedirs(TARGET_PATH)
+       open(TARGET_PATH + 'dataSource1.csv', 'wb').write(file.content)
+       file.close()
 
-       for row in csvfile:
-           print(row)
-
-       """
-       url = 'https://data.iledefrance.fr/explore/dataset/les_salles_de_cinemas_en_ile-de-france/download?format=csv&timezone=Europe/Berlin&use_labels_for_header=false'
-       req =  requests.get(url)
-       csv_file = open('/home/saba/airflow/resources/data1.csv','wb')
-       #csv_file = open('C:/Users/sabai/OneDrive/Bureau/2A - ISEP/S2/BDD/Big Data/data1.csv','wb')
-
-       csv_file.write(url)
-       csv_file.close()
-       return 1
-       """
 
    def taskLoadDataSource2():
-       df = pd.read_csv('//wsl.localhost/Ubuntu-18.04/home/saba/airflow/resources/data1.csv', sep=',')
-       df.head()
+       TARGET_PATH = DATALAKE_ROOT_FOLDER + "/raw/source2/imdb/MovieRating/"
+       if not os.path.exists(TARGET_PATH):
+           os.makedirs(TARGET_PATH)
+
+       url = 'https://datasets.imdbws.com/title.ratings.tsv.gz'
+       r = req.get(url, allow_redirects=True)
+       open(TARGET_PATH + 'title.ratings.tsv.gz', 'wb').write(r.content)
+
+
+   def taskFormattedDataSource2(file_name, current_day):
+       RATING_PATH = DATALAKE_ROOT_FOLDER + "/raw/imdb/MovieRating/" + file_name
+       FORMATTED_RATING_FOLDER = DATALAKE_ROOT_FOLDER + "formatted/imdb/MovieRatings/"
+       if not os.path.exists(FORMATTED_RATING_FOLDER):
+           os.makedirs(FORMATTED_RATING_FOLDER)
+       df = pd.read_csv(RATING_PATH, sep='\t')
+       parquet_file_name = file_name.replace(".tsv.gz", ".snappy.parquet")
+       df.to_parquet(FORMATTED_RATING_FOLDER + parquet_file_name)
+
 
    t1 = PythonOperator(
        task_id='taskLoadDataSource1',
@@ -61,6 +76,13 @@ with DAG(
        python_callable=taskLoadDataSource2
    )
 
+   t3 = PythonOperator(
+       task_id='taskFormattedDataSource2',
+       python_callable=taskFormattedDataSource2,
+       op_args=['title.ratings.tsv.gz', date.today().strftime("%Y%m%d")]
+   )
+
    t1 >> t2
+   t2 >> t3
 
 
