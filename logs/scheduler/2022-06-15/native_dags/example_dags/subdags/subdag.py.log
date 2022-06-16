@@ -1,0 +1,5 @@
+[2022-06-15 12:00:28,451] {processor.py:163} INFO - Started process (PID=3111) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-06-15 12:00:28,453] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-06-15 12:00:28,454] {logging_mixin.py:109} INFO - [2022-06-15 12:00:28,454] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-06-15 12:00:28,459] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-06-15 12:00:28,474] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/subdags/subdag.py took 0.027 seconds

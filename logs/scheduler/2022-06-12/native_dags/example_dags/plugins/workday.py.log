@@ -1,0 +1,55 @@
+[2022-06-12 14:11:37,304] {processor.py:163} INFO - Started process (PID=4002) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:11:37,310] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:11:37,323] {logging_mixin.py:109} INFO - [2022-06-12 14:11:37,322] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:11:37,354] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:11:37,448] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.190 seconds
+[2022-06-12 14:12:42,714] {processor.py:163} INFO - Started process (PID=4032) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:12:42,722] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:12:42,725] {logging_mixin.py:109} INFO - [2022-06-12 14:12:42,724] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:12:42,737] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:12:42,764] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.063 seconds
+[2022-06-12 14:13:36,815] {processor.py:163} INFO - Started process (PID=4066) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:13:36,818] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:13:36,820] {logging_mixin.py:109} INFO - [2022-06-12 14:13:36,819] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:13:36,823] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:13:36,834] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.022 seconds
+[2022-06-12 14:14:15,626] {processor.py:163} INFO - Started process (PID=4100) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:14:15,628] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:14:15,629] {logging_mixin.py:109} INFO - [2022-06-12 14:14:15,629] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:14:15,632] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:14:15,645] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.023 seconds
+[2022-06-12 14:14:53,658] {processor.py:163} INFO - Started process (PID=4134) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:14:53,661] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:14:53,661] {logging_mixin.py:109} INFO - [2022-06-12 14:14:53,661] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:14:53,663] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:14:53,672] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.017 seconds
+[2022-06-12 14:15:33,160] {processor.py:163} INFO - Started process (PID=4171) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:15:33,163] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:15:33,164] {logging_mixin.py:109} INFO - [2022-06-12 14:15:33,164] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:15:33,167] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:15:33,179] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.024 seconds
+[2022-06-12 14:16:18,903] {processor.py:163} INFO - Started process (PID=4207) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:16:18,907] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:16:18,908] {logging_mixin.py:109} INFO - [2022-06-12 14:16:18,908] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:16:18,910] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:16:18,935] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.038 seconds
+[2022-06-12 14:17:02,924] {processor.py:163} INFO - Started process (PID=4240) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:17:02,927] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:17:02,928] {logging_mixin.py:109} INFO - [2022-06-12 14:17:02,928] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:17:02,933] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:17:02,953] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.036 seconds
+[2022-06-12 14:17:51,618] {processor.py:163} INFO - Started process (PID=4276) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:17:51,620] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:17:51,621] {logging_mixin.py:109} INFO - [2022-06-12 14:17:51,621] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:17:51,623] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:17:51,634] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.020 seconds
+[2022-06-12 14:18:41,254] {processor.py:163} INFO - Started process (PID=4313) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:18:41,256] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:18:41,257] {logging_mixin.py:109} INFO - [2022-06-12 14:18:41,257] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:18:41,260] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:18:41,273] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.024 seconds
+[2022-06-12 14:19:45,594] {processor.py:163} INFO - Started process (PID=4350) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:19:45,610] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-12 14:19:45,616] {logging_mixin.py:109} INFO - [2022-06-12 14:19:45,614] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:19:45,653] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-12 14:19:45,800] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.260 seconds

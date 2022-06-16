@@ -1,0 +1,6 @@
+[2022-06-13 11:29:13,527] {processor.py:163} INFO - Started process (PID=4666) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2022-06-13 11:29:13,538] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py for tasks to queue
+[2022-06-13 11:29:13,542] {logging_mixin.py:109} INFO - [2022-06-13 11:29:13,541] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2022-06-13 11:29:14,006] {logging_mixin.py:109} INFO - [2022-06-13 11:29:14,005] {tutorial_taskflow_api_etl_virtualenv.py:30} WARNING - The tutorial_taskflow_api_etl_virtualenv example DAG requires virtualenv, please install it.
+[2022-06-13 11:29:14,007] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py
+[2022-06-13 11:29:14,068] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py took 0.566 seconds

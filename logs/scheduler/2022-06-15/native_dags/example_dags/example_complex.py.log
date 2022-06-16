@@ -1,0 +1,7 @@
+[2022-06-15 12:00:37,291] {processor.py:163} INFO - Started process (PID=3119) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_complex.py
+[2022-06-15 12:00:37,293] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-06-15 12:00:37,294] {logging_mixin.py:109} INFO - [2022-06-15 12:00:37,294] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_complex.py
+[2022-06-15 12:00:37,318] {processor.py:652} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_complex.py
+[2022-06-15 12:00:37,331] {logging_mixin.py:109} INFO - [2022-06-15 12:00:37,331] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-06-15 12:00:37,345] {logging_mixin.py:109} INFO - [2022-06-15 12:00:37,345] {dag.py:2937} INFO - Setting next_dagrun for example_complex to None
+[2022-06-15 12:00:37,361] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_complex.py took 0.075 seconds

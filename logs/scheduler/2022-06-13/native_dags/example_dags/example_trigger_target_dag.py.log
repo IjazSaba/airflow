@@ -1,0 +1,7 @@
+[2022-06-13 11:29:19,218] {processor.py:163} INFO - Started process (PID=4670) to work on /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2022-06-13 11:29:19,223] {processor.py:642} INFO - Processing file /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2022-06-13 11:29:19,228] {logging_mixin.py:109} INFO - [2022-06-13 11:29:19,227] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2022-06-13 11:29:19,361] {processor.py:652} INFO - DAG(s) dict_keys(['example_trigger_target_dag']) retrieved from /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2022-06-13 11:29:19,443] {logging_mixin.py:109} INFO - [2022-06-13 11:29:19,443] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-06-13 11:29:19,539] {logging_mixin.py:109} INFO - [2022-06-13 11:29:19,539] {dag.py:2937} INFO - Setting next_dagrun for example_trigger_target_dag to None
+[2022-06-13 11:29:19,584] {processor.py:171} INFO - Processing /home/saba/airflow_venv/airflow_venv/lib/python3.6/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.378 seconds
