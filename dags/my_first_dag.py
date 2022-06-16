@@ -29,7 +29,7 @@ with DAG(
 
 
    def taskLoadDataSource1():
-       url = 'https://static.data.gouv.fr/resources/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/20220610-190121/covid-hosp-txad-age-fra-2022-06-10-19h01.csv'
+       url = 'https://static.data.gouv.fr/resources/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/20220615-190218/covid-hosp-txad-age-fra-2022-06-15-19h02.csv'
        response = urlopen(url)
        csvfile = csv.reader(codecs.iterdecode(response, 'utf-8'))
 
@@ -48,7 +48,7 @@ with DAG(
        """
 
    def taskLoadDataSource2():
-       df = pd.read_csv('C:/Users/sabai/OneDrive/Bureau/2A - ISEP/S2/BDD/project_BigData/Suivi_ventes.csv', sep=',')
+       df = pd.read_csv('//wsl.localhost/Ubuntu-18.04/home/saba/airflow/resources/data1.csv', sep=',')
        df.head()
 
    t1 = PythonOperator(
