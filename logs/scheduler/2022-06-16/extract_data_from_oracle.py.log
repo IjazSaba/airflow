@@ -579,3 +579,10 @@
 [2022-06-16 15:17:37,066] {logging_mixin.py:109} INFO - [2022-06-16 15:17:37,062] {dag.py:2398} INFO - Sync 1 DAGs
 [2022-06-16 15:17:37,130] {logging_mixin.py:109} INFO - [2022-06-16 15:17:37,129] {dag.py:2937} INFO - Setting next_dagrun for projet_BigData to None
 [2022-06-16 15:17:37,176] {processor.py:171} INFO - Processing /home/saba/airflow/dags/extract_data_from_oracle.py took 0.912 seconds
+[2022-06-16 15:18:14,668] {processor.py:163} INFO - Started process (PID=19794) to work on /home/saba/airflow/dags/extract_data_from_oracle.py
+[2022-06-16 15:18:14,679] {processor.py:642} INFO - Processing file /home/saba/airflow/dags/extract_data_from_oracle.py for tasks to queue
+[2022-06-16 15:18:14,680] {logging_mixin.py:109} INFO - [2022-06-16 15:18:14,679] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/airflow/dags/extract_data_from_oracle.py
+[2022-06-16 15:18:15,084] {processor.py:652} INFO - DAG(s) dict_keys(['projet_BigData']) retrieved from /home/saba/airflow/dags/extract_data_from_oracle.py
+[2022-06-16 15:18:15,116] {logging_mixin.py:109} INFO - [2022-06-16 15:18:15,112] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-06-16 15:18:15,151] {logging_mixin.py:109} INFO - [2022-06-16 15:18:15,150] {dag.py:2937} INFO - Setting next_dagrun for projet_BigData to None
+[2022-06-16 15:18:15,183] {processor.py:171} INFO - Processing /home/saba/airflow/dags/extract_data_from_oracle.py took 0.520 seconds

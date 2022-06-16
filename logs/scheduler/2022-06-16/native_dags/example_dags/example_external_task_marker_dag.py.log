@@ -326,3 +326,11 @@
 [2022-06-16 15:16:53,068] {logging_mixin.py:109} INFO - [2022-06-16 15:16:53,068] {dag.py:2937} INFO - Setting next_dagrun for example_external_task_marker_child to None
 [2022-06-16 15:16:53,068] {logging_mixin.py:109} INFO - [2022-06-16 15:16:53,068] {dag.py:2937} INFO - Setting next_dagrun for example_external_task_marker_parent to None
 [2022-06-16 15:16:53,084] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py took 0.145 seconds
+[2022-06-16 15:18:12,066] {processor.py:163} INFO - Started process (PID=19781) to work on /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2022-06-16 15:18:12,077] {processor.py:642} INFO - Processing file /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py for tasks to queue
+[2022-06-16 15:18:12,078] {logging_mixin.py:109} INFO - [2022-06-16 15:18:12,078] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2022-06-16 15:18:12,191] {processor.py:652} INFO - DAG(s) dict_keys(['example_external_task_marker_parent', 'example_external_task_marker_child']) retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py
+[2022-06-16 15:18:12,210] {logging_mixin.py:109} INFO - [2022-06-16 15:18:12,209] {dag.py:2398} INFO - Sync 2 DAGs
+[2022-06-16 15:18:12,233] {logging_mixin.py:109} INFO - [2022-06-16 15:18:12,233] {dag.py:2937} INFO - Setting next_dagrun for example_external_task_marker_child to None
+[2022-06-16 15:18:12,234] {logging_mixin.py:109} INFO - [2022-06-16 15:18:12,234] {dag.py:2937} INFO - Setting next_dagrun for example_external_task_marker_parent to None
+[2022-06-16 15:18:12,253] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/example_external_task_marker_dag.py took 0.191 seconds
