@@ -4,10 +4,13 @@ import requests as req
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 import os
-import pandas as pd
-import csv
-from urllib.request import urlopen
-import codecs
+from pyspark.sql import SparkSession
+
+from pyspark.context import SparkContext
+from pyspark.sql.session import SparkSession
+sc = SparkContext.getOrCreate()
+spark = SparkSession(sc)
+
 
 HOME = os.path.expanduser('~')
 DATALAKE_ROOT_FOLDER = HOME + "/airflow/"
@@ -56,14 +59,13 @@ with DAG(
        open(TARGET_PATH + 'title.ratings.tsv.gz', 'wb').write(r.content)
 
 
-   def taskFormattedDataSource2(file_name, current_day):
-       RATING_PATH = DATALAKE_ROOT_FOLDER + "/raw/imdb/MovieRating/" + file_name
-       FORMATTED_RATING_FOLDER = DATALAKE_ROOT_FOLDER + "formatted/imdb/MovieRatings/"
-       if not os.path.exists(FORMATTED_RATING_FOLDER):
-           os.makedirs(FORMATTED_RATING_FOLDER)
-       df = pd.read_csv(RATING_PATH, sep='\t')
-       parquet_file_name = file_name.replace(".tsv.gz", ".snappy.parquet")
-       df.to_parquet(FORMATTED_RATING_FOLDER + parquet_file_name)
+   def taskFormattedDataSource1():
+       #read raw csv file
+       RAW_PATH = DATALAKE_ROOT_FOLDER + "raw/source1/"
+       TARGET_PATH = DATALAKE_ROOT_FOLDER + "formatted/source1/"
+       df = spark.read.csv(RAW_PATH + "dataSource1.csv")
+       df.write.parquet(TARGET_PATH + "dataSource1.parquet")
+
 
 
    t1 = PythonOperator(
@@ -77,12 +79,12 @@ with DAG(
    )
 
    t3 = PythonOperator(
-       task_id='taskFormattedDataSource2',
-       python_callable=taskFormattedDataSource2,
-       op_args=['title.ratings.tsv.gz', date.today().strftime("%Y%m%d")]
+       task_id='taskFormattedDataSource1',
+       python_callable=taskFormattedDataSource1
    )
 
    t1 >> t2
    t2 >> t3
+
 
 
