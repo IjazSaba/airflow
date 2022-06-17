@@ -4,18 +4,20 @@ import requests as req
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 import os
-from pyspark.sql import SparkSession
-
 from pyspark.context import SparkContext
 from pyspark.sql.session import SparkSession
-sc = SparkContext.getOrCreate()
-spark = SparkSession(sc)
+import pandas as pd
+from lib.CombinedData import combine_data
 
 
 HOME = os.path.expanduser('~')
 DATALAKE_ROOT_FOLDER = HOME + "/airflow/"
 
 current_day = date.today().strftime("%Y%m%d")
+
+sc = SparkContext.getOrCreate()
+spark = SparkSession(sc)
+
 
 with DAG(
        'my_first_dag',
@@ -50,7 +52,7 @@ with DAG(
 
 
    def taskLoadDataSource2():
-       TARGET_PATH = DATALAKE_ROOT_FOLDER + "/raw/source2/imdb/MovieRating/"
+       TARGET_PATH = DATALAKE_ROOT_FOLDER + "raw/source2/imdb/MovieRating/" + current_day + "/"
        if not os.path.exists(TARGET_PATH):
            os.makedirs(TARGET_PATH)
 
@@ -60,12 +62,27 @@ with DAG(
 
 
    def taskFormattedDataSource1():
-       #read raw csv file
        RAW_PATH = DATALAKE_ROOT_FOLDER + "raw/source1/"
        TARGET_PATH = DATALAKE_ROOT_FOLDER + "formatted/source1/"
-       df = spark.read.csv(RAW_PATH + "dataSource1.csv")
-       df.write.parquet(TARGET_PATH + "dataSource1.parquet")
+       if not os.path.exists(TARGET_PATH):
+           os.makedirs(TARGET_PATH)
 
+       df = spark.read.csv(RAW_PATH + "dataSource1.csv")
+       df.write.mode("overwrite").parquet(TARGET_PATH + "dataSource1")
+
+
+   def taskFormattedDataSource2(file_name, current_day):
+       RATING_PATH = DATALAKE_ROOT_FOLDER + "raw/source2/imdb/MovieRating/" + current_day + "/" + file_name
+       FORMATTED_RATING_FOLDER = DATALAKE_ROOT_FOLDER + "formatted/source2/imdb/MovieRatings/" + current_day + "/"
+       if not os.path.exists(FORMATTED_RATING_FOLDER):
+           os.makedirs(FORMATTED_RATING_FOLDER)
+       df = pd.read_csv(RATING_PATH, sep='\t')
+       parquet_file_name = file_name.replace(".tsv.gz", ".snappy.parquet")
+       df.to_parquet(FORMATTED_RATING_FOLDER + parquet_file_name)
+
+
+   def task5():
+       combine_data(current_day=date.today().strftime("%Y%m%d"))
 
 
    t1 = PythonOperator(
@@ -83,8 +100,20 @@ with DAG(
        python_callable=taskFormattedDataSource1
    )
 
-   t1 >> t2
-   t2 >> t3
+   t4 = PythonOperator(
+       task_id='taskFormattedDataSource2',
+       python_callable=taskFormattedDataSource2,
+       op_args=['title.ratings.tsv.gz', current_day]
+   )
 
+   t5 = PythonOperator(
+       task_id='task5',
+       python_callable=task5
+   )
+
+
+   t1 >> t3
+   t2 >> t4
+   [t3,t4] >> t5
 
 
