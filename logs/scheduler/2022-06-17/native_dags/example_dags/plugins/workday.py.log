@@ -1373,3 +1373,23 @@
 [2022-06-18 01:50:01,376] {logging_mixin.py:109} INFO - [2022-06-18 01:50:01,376] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
 [2022-06-18 01:50:01,382] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
 [2022-06-18 01:50:01,405] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.043 seconds
+[2022-06-18 01:54:53,506] {processor.py:163} INFO - Started process (PID=5732) to work on /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:54:53,508] {processor.py:642} INFO - Processing file /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-18 01:54:53,509] {logging_mixin.py:109} INFO - [2022-06-18 01:54:53,509] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:54:53,512] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:54:53,525] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.023 seconds
+[2022-06-18 01:56:10,536] {processor.py:163} INFO - Started process (PID=6560) to work on /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:56:10,539] {processor.py:642} INFO - Processing file /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-18 01:56:10,541] {logging_mixin.py:109} INFO - [2022-06-18 01:56:10,540] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:56:10,545] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:56:10,565] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.037 seconds
+[2022-06-18 01:57:18,385] {processor.py:163} INFO - Started process (PID=7067) to work on /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:57:18,392] {processor.py:642} INFO - Processing file /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-18 01:57:18,396] {logging_mixin.py:109} INFO - [2022-06-18 01:57:18,395] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:57:18,408] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:57:18,467] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.095 seconds
+[2022-06-18 01:58:18,143] {processor.py:163} INFO - Started process (PID=7275) to work on /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:58:18,148] {processor.py:642} INFO - Processing file /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-06-18 01:58:18,149] {logging_mixin.py:109} INFO - [2022-06-18 01:58:18,149] {dagbag.py:500} INFO - Filling up the DagBag from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:58:18,153] {processor.py:654} WARNING - No viable dags retrieved from /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py
+[2022-06-18 01:58:18,175] {processor.py:171} INFO - Processing /home/saba/.local/lib/python3.6/site-packages/airflow/example_dags/plugins/workday.py took 0.039 seconds
