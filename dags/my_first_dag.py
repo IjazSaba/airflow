@@ -7,7 +7,8 @@ import os
 from pyspark.context import SparkContext
 from pyspark.sql.session import SparkSession
 import pandas as pd
-from lib.CombinedData import combine_data
+from lib.CombineData1 import combine_data1
+from lib.CombineData2 import combine_data2
 
 
 HOME = os.path.expanduser('~')
@@ -44,7 +45,7 @@ with DAG(
    def taskLoadDataSource1():
        url1 = 'https://www.data.gouv.fr/fr/datasets/r/5ac33ad1-6782-4618-9a51-293f9c2db1d4'
        file = req.get(url1, allow_redirects=True)
-       TARGET_PATH = DATALAKE_ROOT_FOLDER + "raw/source1/"
+       TARGET_PATH = DATALAKE_ROOT_FOLDER + "raw/source1/" + current_day + "/"
        if not os.path.exists(TARGET_PATH):
            os.makedirs(TARGET_PATH)
        open(TARGET_PATH + 'dataSource1.csv', 'wb').write(file.content)
@@ -62,11 +63,10 @@ with DAG(
 
 
    def taskFormattedDataSource1():
-       RAW_PATH = DATALAKE_ROOT_FOLDER + "raw/source1/"
-       TARGET_PATH = DATALAKE_ROOT_FOLDER + "formatted/source1/"
+       RAW_PATH = DATALAKE_ROOT_FOLDER + "raw/source1/" + current_day + "/"
+       TARGET_PATH = DATALAKE_ROOT_FOLDER + "formatted/source1/" + current_day + "/"
        if not os.path.exists(TARGET_PATH):
            os.makedirs(TARGET_PATH)
-
        df = spark.read.csv(RAW_PATH + "dataSource1.csv")
        df.write.mode("overwrite").parquet(TARGET_PATH + "dataSource1")
 
@@ -82,7 +82,10 @@ with DAG(
 
 
    def task5():
-       combine_data(current_day=date.today().strftime("%Y%m%d"))
+       combine_data2(current_day)
+
+   def task6():
+       print("indexation impossible")
 
 
    t1 = PythonOperator(
@@ -111,9 +114,15 @@ with DAG(
        python_callable=task5
    )
 
+   t6 = PythonOperator(
+       task_id='task6',
+       python_callable=task6
+   )
+
 
    t1 >> t3
    t2 >> t4
    [t3,t4] >> t5
+   t5 >> t6
 
 
